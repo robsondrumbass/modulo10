@@ -3,16 +3,19 @@ version: 0.2
 phases:
   pre_build:
     commands:
-      - echo Fase PRÉ, instalando dependencias `date`
+      - echo Fase PRÉ, instalando dependencias
+      - echo `date`
       - npm install
-      - npm audit fix --force
+      - npm -v
   build:
     commands:
-      - echo Fase Build, Build iniciado em `date`
+      - echo Fase Build, Build iniciado em 
+      - echo `date`
       - npm run build
   post_build:
     commands:
-      - echo Dase POST, Build finalizado em `date`
+      - echo Dase POST, Build finalizado em 
+      - echo `date`
 artifacts:
   files:
     - build/**/*
