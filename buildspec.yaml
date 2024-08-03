@@ -1,0 +1,17 @@
+version: 0.2
+
+phases:
+  pre_build:
+    commands:
+      - echo "Fase PRÉ, instalando dependencias"`date`
+      - npm install
+  build:
+    commands:
+      - echo "Fase Build, Build iniciado em"`date`
+      - npm run build
+  post_build:
+    commands:
+      - echo "Dase POST, Build finalizado em "`date`
+artifacts:
+  files:
+    - build/**/*
