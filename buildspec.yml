@@ -5,7 +5,7 @@ phases:
     commands:
       - echo Fase PRÉ, instalando dependencias
       - echo `date`
-      - npm install
+      - npm install --save
       - npm -v
   build:
     commands:
