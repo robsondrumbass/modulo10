@@ -16,6 +16,7 @@ phases:
     commands:
       - echo Dase POST, Build finalizado em 
       - echo `date`
+      - cp appspec.yml build/
 artifacts:
   files:
     - build/**/*
